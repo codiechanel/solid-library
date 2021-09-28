@@ -1,0 +1,8 @@
+{
+    "name": "@codiechanel/chakra",
+    "main": "./src/index.tsx",
+    
+    
+    "type": "module",
+    "sideEffects": false
+  }
