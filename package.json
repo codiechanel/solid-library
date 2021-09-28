@@ -43,7 +43,7 @@
     "tsc-only": "rimraf dist && tsc",
     "parcel-start": "parcel index.html --open",
     "tsc-build-types": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
-    "npm-publish": "npm publish --access public",
+    "npm-publish": "npm version patch && npm publish --access public",
     "build": "tsc && rollup -c",
     "prepublishOnlyNo": "npm run build",
     "test": "jest && npm run test:types",
