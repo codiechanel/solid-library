@@ -38,10 +38,10 @@
   },
   "files": [
     "chakra",
-    "Hooks",
+    "hooks",
     "tailwind",
     "Common",
-    "Mine",
+    "mine",
     "Dist",
     "types",
     "web",
