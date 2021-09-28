@@ -1,5 +1,6 @@
 import { createMemo, Show, splitProps } from "solid-js";
-import { useWindowEvent } from "../Hooks";
+import { useWindowEvent } from "../../hooks";
+// import { useWindowEvent } from "../Hooks";
 
 interface ModalProps {
   show: any;
@@ -17,9 +18,15 @@ export default function Modal(props: ModalProps) {
     props.onClose();
   };*/
 
-  const [local, others] = splitProps(props, ["show", "className", "innerClassName"]);
+  const [local, others] = splitProps(props, [
+    "show",
+    "className",
+    "innerClassName",
+  ]);
 
-  let className = createMemo(() => "fixed inset-0 z-10 overflow-y-auto " + local.className);
+  let className = createMemo(
+    () => "fixed inset-0 z-10 overflow-y-auto " + local.className
+  );
 
   let innerClassName = createMemo(
     () =>
@@ -27,7 +34,7 @@ export default function Modal(props: ModalProps) {
       local.innerClassName
   );
 
-  useWindowEvent("mousedown", event => {
+  useWindowEvent("mousedown", (event) => {
     let target = event.target as HTMLElement;
 
     if (ref?.contains(target)) return;
@@ -39,13 +46,16 @@ export default function Modal(props: ModalProps) {
 
   return (
     <Show when={props.show()}>
-      {s => {
+      {(s) => {
         return (
           <div className={className()} {...others}>
             <div className="min-h-screen px-4 text-center">
               {/* This element is to trick the browser into centering the modal contents. */}
 
-              <span className="inline-block h-screen align-middle" aria-hidden="true">
+              <span
+                className="inline-block h-screen align-middle"
+                aria-hidden="true"
+              >
                 &#8203;
               </span>
               <div
