@@ -1,0 +1,8 @@
+{
+    "name": "@codiechanel/hooks",
+    "main": "./src/index.tsx",
+    
+    
+    "type": "module",
+    "sideEffects": false
+  }
