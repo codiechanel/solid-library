@@ -45,13 +45,11 @@
     "tailwind",
     "common",
     "mine",
-    "Dist",
     "types",
     "web",
+    "mui",
     "src",
-    "index.d.ts",
-    "index.jsx",
-    "index-bd561d6a.js"
+    "index.d.ts"
   ],
   "sideEffects": false,
   "scripts": {
