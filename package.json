@@ -6,7 +6,7 @@
   "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codiechanel/solid-lib-simple.git"
+    "url": "https://github.com/codiechanel/solid-library.git"
   },
   "type": "module",
   "main": "./src/index.tsx",
@@ -45,7 +45,7 @@
     "parcel-start": "parcel index.html --open",
     "tsc-build-types": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
 
-    "npm-publish": "npm publish",
+    "npm-publish": "npm publish --access public",
     "build": "tsc && rollup -c",
     "prepublishOnlyNo": "npm run build",
     "test": "jest && npm run test:types",
