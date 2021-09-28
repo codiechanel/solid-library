@@ -1,0 +1,8 @@
+{
+    "name": "@codiechanel/mui",
+    "main": "./src/index.tsx",
+    
+    
+    "type": "module",
+    "sideEffects": false
+  }

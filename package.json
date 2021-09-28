@@ -31,6 +31,9 @@
     "./hooks": {
       "solid": "./hooks/src/index.tsx"
     },
+    "./mui": {
+      "solid": "./mui/src/index.tsx"
+    },
     "./dist/*": "./dist/*",
     "./": {
       "solid": "./src/index.tsx"
