@@ -19,6 +19,10 @@
       "solid": "./web/src/index.tsx"
     },
     "./web/dist/*": "./web/dist/*",
+    "./tailwind": {
+      "solid": "./tailwind/src/index.tsx"
+    },
+
     "./dist/*": "./dist/*",
     "./": {
       "solid": "./src/index.tsx"
