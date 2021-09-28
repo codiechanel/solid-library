@@ -27,7 +27,7 @@
   "files": [
     "Chakra",
     "Hooks",
-    "Tailwind",
+    "tailwind",
     "Common",
     "Mine",
     "Dist",
