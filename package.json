@@ -25,6 +25,12 @@
     "./chakra": {
       "solid": "./chakra/src/index.tsx"
     },
+    "./mine": {
+      "solid": "./mine/src/index.tsx"
+    },
+    "./hooks": {
+      "solid": "./hooks/src/index.tsx"
+    },
     "./dist/*": "./dist/*",
     "./": {
       "solid": "./src/index.tsx"
