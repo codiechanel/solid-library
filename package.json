@@ -3,7 +3,7 @@
   "description": "Personal Library",
   "author": "codiechanel",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/codiechanel/solid-library.git"
@@ -23,7 +23,6 @@
     "./": {
       "solid": "./src/index.tsx"
     }
- 
   },
   "files": [
     "Chakra",
@@ -44,7 +43,6 @@
     "tsc-only": "rimraf dist && tsc",
     "parcel-start": "parcel index.html --open",
     "tsc-build-types": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
-
     "npm-publish": "npm publish --access public",
     "build": "tsc && rollup -c",
     "prepublishOnlyNo": "npm run build",
