@@ -8,6 +8,7 @@ specifiers:
   '@rollup/plugin-node-resolve': 13.0.0
   '@types/jest': ^26.0.16
   '@types/node': ^15.12.4
+  '@ungap/event-target': ^0.2.3
   babel-preset-env: ^1.7.0
   babel-preset-solid: ^1.0.1
   jest: ^26.6.3
@@ -25,6 +26,7 @@ specifiers:
   vite-plugin-import: ^0.4.0
 
 dependencies:
+  '@ungap/event-target': 0.2.3
   solid-icons: 0.3.2_solid-js@1.1.5
   solid-styled-components: 0.27.3_solid-js@1.1.5
 
@@ -1630,6 +1632,10 @@ packages:
     dependencies:
       '@types/yargs-parser': 20.2.1
     dev: true
+
+  /@ungap/event-target/0.2.3:
+    resolution: {integrity: sha512-7Bz0qdvxNGV9n0f+xcMKU7wsEfK6PNzo8IdAcOiBgMNyCuU0Mk9dv0Hbd/Kgr+MFFfn4xLHFbuOt820egT5qEA==}
+    dev: false
 
   /abab/2.0.5:
     resolution: {integrity: sha512-9IK9EadsbHo6jLWIpxpR6pL0sazTXV6+SQv25ZB+F7Bj9mJNaOc4nCRabwd5M/JwmUa8idz6Eci6eKfJryPs6Q==}

@@ -34,6 +34,9 @@
     "./mui": {
       "solid": "./mui/src/index.tsx"
     },
+    "./swr": {
+      "solid": "./swr/src/index.tsx"
+    },
     "./dist/*": "./dist/*",
     "./": {
       "solid": "./src/index.tsx"
@@ -41,6 +44,7 @@
   },
   "files": [
     "chakra",
+    "swr",
     "hooks",
     "tailwind",
     "common",
@@ -95,6 +99,7 @@
     "preset": "solid-jest/preset/browser"
   },
   "dependencies": {
+    "@ungap/event-target": "^0.2.3",
     "solid-icons": "^0.3.2",
     "solid-styled-components": "^0.27.3"
   }
