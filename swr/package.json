@@ -1,8 +1,6 @@
 {
-    "name": "@codiechanel/swr",
-    "main": "./src/index.tsx",
-    
-    
-    "type": "module",
-    "sideEffects": false
-  }
+  "name": "@codiechanel/swr",
+  "main": "./src/index.tsx",
+  "type": "module",
+  "sideEffects": false
+}

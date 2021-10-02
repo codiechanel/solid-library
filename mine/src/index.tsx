@@ -12,3 +12,6 @@ export * from "./Toast";
 
 export { default as ToastSingle } from "./ToastSingle";
 export * from "./ToastSingle";
+
+export { default as RippleLoader } from "./RippleLoader";
+export * from "./RippleLoader";
