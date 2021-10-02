@@ -2,7 +2,11 @@ import "./Toast.css";
 
 import { HiSolidBell } from "solid-icons/hi";
 import { createSignal, Show } from "solid-js";
-import { ToastMsg } from "../Common/constants";
+// import { ToastMsg } from "../Common/constants";
+export interface ToastMsg {
+  title: string;
+  description?: string;
+}
 
 let [toastMsg, setToastMsg] = createSignal({ msg: null });
 
