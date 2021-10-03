@@ -3,21 +3,21 @@ import "./Toast.css";
 import { HiSolidBell } from "solid-icons/hi";
 import { createSignal, Show } from "solid-js";
 // import { ToastMsg } from "../Common/constants";
-export interface ToastMsg {
+export interface ToastSingleMsg {
   title: string;
   description?: string;
 }
 
 let [toastMsg, setToastMsg] = createSignal({ msg: null });
 
-export function showToastSingle(toastItem: ToastMsg) {
+export function showToastSingle(toastItem: ToastSingleMsg) {
   setToastMsg({ msg: toastItem });
 }
 
 export default function ToastSingle() {
   return (
     <Show when={toastMsg().msg}>
-      {(item: ToastMsg) => {
+      {(item: ToastSingleMsg) => {
         setTimeout(() => {
           setToastMsg({ msg: null });
         }, 1000);

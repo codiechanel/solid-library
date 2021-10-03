@@ -15,3 +15,9 @@ export * from "./ToastSingle";
 
 export { default as RippleLoader } from "./RippleLoader";
 export * from "./RippleLoader";
+
+export { default as Flex } from "./Flex";
+export * from "./Flex";
+
+export { default as Scrollable } from "./Scrollable";
+export * from "./Scrollable";
