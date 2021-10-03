@@ -1,8 +1,14 @@
 {
-    "name": "@codiechanel/web",
-    "main": "./src/index.tsx",
-    
-    
-    "type": "module",
-    "sideEffects": false
+  "name": "@codiechanel/web",
+  "main": "./src/index.tsx",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "solid": "./src/index.tsx"
+    },
+    "./demo": {
+      "solid": "./demo/src/index.tsx"
+    }
   }
+}
