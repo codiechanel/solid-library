@@ -1,0 +1,8 @@
+{
+    "name": "@codiechanel/demo",
+    "main": "./src/index.tsx",
+    
+    
+    "type": "module",
+    "sideEffects": false
+  }
