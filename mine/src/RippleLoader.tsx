@@ -1,4 +1,5 @@
 import { styled } from "solid-styled-components";
+import { Component, createMemo, JSX, splitProps } from "solid-js";
 
 const RippleRoot = styled("div")`
   & {
@@ -35,6 +36,28 @@ const RippleRoot = styled("div")`
   }
 `;
 
+const RippleLoader: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
+  const [local, others] = splitProps(props, ["className", "class"]);
+  let className = createMemo(
+    () =>
+      "flex-1 flex items-center justify-center " +
+      local.className +
+      " " +
+      local.class
+  );
+  return (
+    <div class={className()} {...others}>
+      <RippleRoot>
+        <div></div>
+        <div></div>
+      </RippleRoot>
+    </div>
+  );
+};
+
+export default RippleLoader;
+
+/*
 export default function RippleLoader() {
   return (
     <div class="text-red-500  flex-1 flex items-center justify-center">
@@ -45,3 +68,4 @@ export default function RippleLoader() {
     </div>
   );
 }
+*/
