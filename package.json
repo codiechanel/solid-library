@@ -29,6 +29,9 @@
     "./chakra": {
       "solid": "./chakra/src/index.tsx"
     },
+    "./headless": {
+      "solid": "./headless/src/index.tsx"
+    },
     "./mine": {
       "solid": "./mine/src/index.tsx"
     },
@@ -50,6 +53,7 @@
     "chakra",
     "swr",
     "hooks",
+    "headless",
     "tailwind",
     "common",
     "mine",
