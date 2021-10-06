@@ -40,12 +40,17 @@ const ColumnFull: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
 };
 
 const RowFull: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
-  const [local, others] = splitProps(props, ["className", "class"]);
+  const [local, others] = splitProps(props, [
+    "className",
+    "class",
+    "classList",
+  ]);
   let className = createMemo(
     () => "flex flex-row flex-1 " + local.className + " " + local.class
   );
+  let classList = createMemo(() => local.classList);
   return (
-    <div class={className()} {...others}>
+    <div class={className()} {...others} classList={classList()}>
       {props.children}
     </div>
   );
