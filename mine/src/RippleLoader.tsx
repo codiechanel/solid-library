@@ -48,8 +48,8 @@ const RippleLoader: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
   return (
     <div class={className()} {...others}>
       <RippleRoot>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
       </RippleRoot>
     </div>
   );
