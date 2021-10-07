@@ -34,14 +34,14 @@
 }
 
 .notification {
-	background: #fff;
+	/*background: #fff;*/
 	transition: .3s ease;
 	position: relative;
 	pointer-events: auto;
 	overflow: hidden;
-	margin: 0 0 6px;
-	padding: 30px;
-	margin-bottom: 15px;
+	/*margin: 0 0 6px;*/
+	/*padding: 30px;*/
+	/*margin-bottom: 15px;*/
 	width: 300px;
 	max-height: 100px;
 	border-radius: 3px 3px 3px 3px;
@@ -89,10 +89,10 @@
 }
 
 .toast {
-    height: 200px;
+    /*height: 200px;*/
     width: 365px;
 	color: #fff;
-	padding: 20px 15px 10px 10px;
+	/*padding: 20px 15px 10px 10px;*/
 }
 
 .notification-container button {
